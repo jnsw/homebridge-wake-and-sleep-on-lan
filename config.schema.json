@@ -1,7 +1,7 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
-  "pluginType": "platform",
-  "singular": true,
+  "pluginAlias": "Wake-on-LAN",
+  "pluginType": "accessory",
+  "singular": false,
   "schema": {
     "type": "object",
     "properties": {
@@ -9,7 +9,17 @@
         "title": "Name",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": "Desktop"
+      },
+      "hostname": {
+        "title": "Computer Name / IP Address",
+        "type": "string",
+        "required": true
+      },
+      "macAddress": {
+        "title": "MAC Address",
+        "type": "string",
+        "requried": true
       }
     }
   }

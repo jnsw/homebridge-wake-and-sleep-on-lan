@@ -1,22 +1,22 @@
 {
-  "private": true,
-  "displayName": "Plugin Name",
-  "name": "homebridge-plugin-name",
+  "private": false,
+  "displayName": "Wake on LAN Switch",
+  "name": "@jms777/homebridge-wake-on-lan",
   "version": "1.0.0",
-  "description": "A short description about what your plugin does.",
+  "description": "A basic switch accessory which can ping a device to check if it's currently on and send a wake on lan packet when the switch on command is sent.",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/USERNAME/GITHUB_PROJECT_NAME.git"
+    "url": "git://github.com/jms737/hb_plugin_computer"
   },
   "bugs": {
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME/issues"
+    "url": "git://github.com/jms737/hb_plugin_computer/issues"
   },
   "engines": {
     "node": ">=10.17.0",
     "homebridge": ">=1.0.0"
   },
-  "main": "dist/index.js",
+  "main": "dist/accessory.js",
   "scripts": {
     "lint": "eslint src/**.ts --max-warnings=0",
     "watch": "npm run build && npm link && nodemon",
@@ -26,9 +26,14 @@
   "keywords": [
     "homebridge-plugin"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "ping": "^0.4.1",
+    "wol": "^1.0.7"
+  },
   "devDependencies": {
     "@types/node": "^14.10.3",
+    "@types/ping": "^0.2.0",
+    "@types/wol": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
     "@typescript-eslint/parser": "^4.1.1",
     "eslint": "^7.9.0",
