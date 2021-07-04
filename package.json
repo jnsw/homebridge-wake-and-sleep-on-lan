@@ -2,7 +2,7 @@
   "private": false,
   "displayName": "Wake on LAN Switch",
   "name": "@jms777/homebridge-wake-on-lan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A basic switch accessory which can ping a device to check if it's currently on and send a wake on lan packet when the switch on command is sent.",
   "license": "Apache-2.0",
   "repository": {
