@@ -8,9 +8,9 @@
 
 # Wake on LAN Switch
 
-This is a template Homebridge platform plugin and can be used as a base to help you get started developing your own plugin.
+A basic switch accessory which can ping a device to check if it's currently on and send a wake on lan packet when the switch on command is sent.
 
-This template should be use in conjunction with the [developer documentation](https://developers.homebridge.io/). A full list of all supported service types, and their characteristics is available on this site.
+Simply enter the devices MAC address for the wake on lan command and the IP address or hostname/computer name for the ping command.
 
 ## Setup Development Environment
 
