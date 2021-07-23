@@ -60,6 +60,7 @@ class ComputerLanSwitch implements AccessoryPlugin {
     ping.sys.probe(this._hostname, (isAlive, err) => {
       if (err) {
         this.log.error(err);
+        callback(err, null);
       } else {
         this.log.debug('Current state of the computer was returned: ' + (isAlive ? 'ON' : 'OFF'));
         callback(null, isAlive);
