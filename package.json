@@ -7,10 +7,10 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jms737/hb_plugin_computer"
+    "url": "git://github.com/jms737/homebridge-wake-on-lan"
   },
   "bugs": {
-    "url": "git://github.com/jms737/hb_plugin_computer/issues"
+    "url": "git://github.com/jms737/homebridge-wake-on-lan/issues"
   },
   "engines": {
     "node": ">=10.17.0",
