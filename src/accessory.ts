@@ -13,6 +13,7 @@ import {
 
 import ping from 'ping';
 import wol from 'wol';
+import fetch from 'node-fetch';
 
 let hap: HAP;
 
@@ -91,9 +92,18 @@ class ComputerLanSwitch implements AccessoryPlugin {
     });
   }
 
-  turnOffComputer(): void {
-    this.log.debug('Turn off is not yet implemented');
+  async turnOffComputer(): Promise<void> {
+    try {
+      const response = await fetch('http://${this._hostname}:7763/poweroff');
+      
+      if (!response.ok) {
+        this.log.debug(`Error: ${response.statusText}`);
+      }
+    } catch (error) {
+      this.log.debug('Error!');
+    }
   }
+  
 
   /*
    * This method is called directly after creation of this instance.
