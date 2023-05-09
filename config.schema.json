@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "Wake-on-LAN",
+  "pluginAlias": "Wake-Sleep-on-LAN",
   "pluginType": "accessory",
   "singular": false,
   "schema": {
