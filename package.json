@@ -1,16 +1,16 @@
 {
   "private": false,
-  "displayName": "Wake on LAN Switch",
-  "name": "@jms777/homebridge-wake-on-lan",
-  "version": "1.0.3",
+  "displayName": "Wake on and Sleep on LAN Switch",
+  "name": "@jnsw/homebridge-wake-and-sleep-on-lan",
+  "version": "0.0.1",
   "description": "A basic switch accessory which can ping a device to check if it's currently on and send a wake on lan packet when the switch on command is sent.",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jms737/homebridge-wake-on-lan"
+    "url": "git://github.com/jnsw/homebridge-wake-and-sleep-on-lan"
   },
   "bugs": {
-    "url": "git://github.com/jms737/homebridge-wake-on-lan/issues"
+    "url": "git://github.com/jnsw/homebridge-wake-and-sleep-on-lan/issues"
   },
   "engines": {
     "node": ">=10.17.0",
